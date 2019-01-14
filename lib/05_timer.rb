@@ -1,3 +1,3 @@
 def time_string(seconds)
-	"#{seconds / 3600}:#{seconds / 60 % 60}:#{seconds % 60}"
+	"#{'%02d' % (seconds / 3600)}:#{'%02d' % (seconds / 60 % 60)}:#{'%02d' % (seconds % 60)}"
 end
